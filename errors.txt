@@ -1,0 +1,33 @@
+First error encounterd logic error, I wanted to change the color of the text, and i set the color to red in the externall css file, but there was another bootstrap class conflciting with the color 
+Second error, cannot post, i added the forms to the blog field that i created a route to the sub
+
+Second Problem: I was having a problem trying to get the data from the user added onto into the posts list, The 
+solution was that my approach was wrong, instead of focusing on trying to get the script.js file to add,
+the title of the user post to the list of post, I should have used the index.ejs file instead, to solve i created add an
+array, adn each time, Remeber also that the posts will not persist between sessions, so each time you add a post it will disapear
+
+Third Problem: Another problem i was having was related to the backend side of things, i was trying to render the posts page, when 
+the user creates a post the post will be added to the post list. When the user clicks on the posts list, there was a problem trying to render the other page,
+However this was solved. WHat needed to happen was first the post.ejs file had to be iside of the views folder, second:// when setting up a route, make sure that the /route has the foward slash
+Third:// when setting up a route, make sure you use render, with the.js extension 
+
+Fourth Problem: I want that when the user clicks on their post inside of the post list, they are redirected to the post page, where
+they should be able to see their post.👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿👇🏿
+
+Solution, you need to update the post endpoint, you need to send the object of the post along with the post.ejs file
+in the res.render.
+
+Wrong Aproach:
+when you click on publish you need to figure out a way, that when you add a post to the posts container, that you are passing data from the server to be added 
+Try creating an object, the has the title and the body 
+
+inside of the index.js file you need to handle the posts, so that when thje user makes a post, the server will grab the dats
+from the req.body, and piush the data into an array, after that the array will be sent to the ejs tag in the ejs file 
+
+
+you have 20 minutes to finsih 
+
+
+1.send the title of the objects as a link 
+how do you send an object from the array either as one entity or as the object as the title and content 
+figure out how to send the title and and content inside of the posts 

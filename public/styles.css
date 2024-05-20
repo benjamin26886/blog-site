@@ -1,0 +1,20 @@
+.blog-header-logo{
+    text-decoration: none;
+    font-size: 2.25rem;
+    color: red;
+    border-bottom: solid #e5e5e5;
+}
+
+a {
+    text-decoration: none !important; 
+}
+.divider{
+    height: 1px;
+    background-color: #ccc
+}
+body{
+    background-color: white; 
+}
+.post-button{
+    border-radius: 60%;
+}
