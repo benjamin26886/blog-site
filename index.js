@@ -13,9 +13,7 @@ app.get("/",(req,res)=>{
     res.render("index.ejs",{ posts: posts }); 
 }); 
 
-app.listen(port,()=>{
-    console.log(`listening on port ${port}`);
-});
+
 app.post("/submit",(req,res)=>{ // You need to make sure that there is a (/) backslash before submit
     
     //Creat a post object 
@@ -33,6 +31,10 @@ app.post("/submit",(req,res)=>{ // You need to make sure that there is a (/) bac
     
 });
 
+
+app.listen(port,()=>{
+    console.log(`listening at localhost:${port}`);
+});
 
 // Next Task include the partials, so that when the user clicks on a post, they get directed to the posts page
 //After that create the feature that will allow a user to edit, and delete their posts
