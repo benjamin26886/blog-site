@@ -23,11 +23,9 @@ app.post("/submit",(req,res)=>{ // You need to make sure that there is a (/) bac
     }
     posts.push(post);
     
-
-    res.render("index",{   //Before you had the index.ejs, you dont need .ejs, it is automatically implied 
-        posts:posts   
-    });
-    console.log(post);
+    console.log(posts);
+    res.redirect("/"); 
+    // Use 'redirect' instead of 'render' because you will be on the '/submit' route. If you refresh your page, it will add the same values to the posts array again.
     
 });
 

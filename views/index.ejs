@@ -85,15 +85,10 @@
 
             <%posts.forEach( post=> { %>
               <div>
-                  <h3>
-                    <%= post.postTitle%>
-                  </h3>
-                  
-                  <p>
-                    <%= post.postContent%>
-                  </p>
-                </div>
-            <%})%>
+                  <h3><%= post.postTitle%></h3>
+                    <p><%= post.postContent%></p>
+                  </div>
+                  <%})%>
             <!--
             <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
             <blockquote>
@@ -109,12 +104,16 @@
       <h4>
        <%posts.forEach( post=> { %>
         <div>
-            <h3><%= post.title%></h3>
-              <p><%= post.content%></p>
+            <h3><%= post.postTitle%></h3>
+              <p><%= post.postContent%></p>
             </div>
             <%})%>
         </div>
     </div>
+
+    <!-- I didn't understand why you are using two columns, post and blog, and using the same array posts. Anyway, you were using the wrong name to get the data from the objects stored in the array -->
+
+
     <!--Post buttton-->
     <div class="row mb-2 mt-3">
       <div>
